@@ -1,35 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template - Utilizar como modelo</title>
+    <title>Página Principal</title>
     <link rel="stylesheet" href="base.css">
+    <style>
+        table {
+            border: solid 2px gray ;
+            width: 1000px;
+            height: 350px;
+            border-spacing: 0px;
+            border-radius: 15px;
+            box-shadow: 33px 32px 28px 0px rgba(0,0,0,0.1);
+        }
+        table thead th {
+            background-color: #b4e5f1;
+            color: black;
+        }
+        table tbody {
+            text-align: center;
+        }
+        table tbody tr:nth-child(even) td{
+            background-color: aquamarine;
+        }
+    </style>
 </head>
 <body>
     <div class="wrapper">
         <div class="menu">
             <!-- Aqui vai o seu menu -->
             <ul>
-                <li><a href="#">Link</a></li>
+                <li><a href="principal.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href='horario.html'>Nossos Horários</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </div>
-
         <div class="main">
             <div class="header">
-                Header
-                <!-- Aqui vai o seu header -->
+                <div class="pagetitle">
+                    <img src="horario.png" alt="Imagem de um Relógio" width="200">
+                    
+                </div>
             </div>
-    
             <div class="content">
-                Content
                 <!-- Aqui vai o seu conteúdo -->
+                <h1>Nossos Horários</h1>
+                <p>Nós oferecemos diversos serviços de oftalmologia, desde a clínica médica atendendo todos os casos relativos aos olhos, até cirurgias mais avançadas. Temos também horários especiais para casos de urgência.
+                    <br>Veja abaixo nossos horários e valores:
+                </p>
+                <table align="center" >
+                    <thead>
+                        <tr>
+                            <th style="border-top-left-radius: 15px;">Serviços</th>
+                            <th>Segunda a Sexta</th>
+                            <th>Sábados</th>
+                            <th style="border-top-right-radius: 15px;">Feriados</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Atendimento clínico</td>
+                            <td> Horário: 08h - 19h
+                                <br>Valor: R$ 350,00
+                            </td>
+                            <td>08h - 14h
+                                <br>Valor: R$ 400,00
+                            </td>
+                            <td> -
+                            </td>
+                        </tr>
+                        <tr><td>Cirurgias</td>
+                            <td>08h - 19h
+                                <br>Valor: R$ 1.890,00 a R$10.560,00
+                            </td>
+                            <td>08h - 18h
+                                <br>Valor: R$ 2.395,00 a RS12.860,00
+                            </td>
+                            <td>08h - 18h
+                                <br>Valor: R$3.560,00 a 15.670,00
+                            </td>
+                        </tr>
+                        <tr><td>Casos de urgência</td>
+                            <td>06h - 21h
+                                <br>Valor: R$ 550,00
+                            </td>
+                            <td>08h - 18h
+                                <br>Valor: R$ 750,00
+                            </td>
+                            <td>08h - 18h
+                                <br>Valor: R$980,00
+                            </td>
+                        </tr>
+                        <tr><td style="border-bottom-left-radius: 15px;">Exames</td>
+                            <td>08h - 19h
+                                <br>Valor: R$ 225,00 a RS950,00
+                            </td>
+                            <td>08h - 14h
+                                <br>Valor: R$ 430,00 a RS1.080,00
+                            </td>
+                            <td style="border-bottom-right-radius: 15px;">-
+                                <br>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
     
             <div class="footer">
-                Footer
-                <!-- Aqui vai o seu rodapé -->
+                <p>Copyright 2023 Hospital dos Olhos Brasília <sup>&copy;</sup> 
+                    | Siga-nos nas redes sociais: <sub><sub><a href="https://linkedin.com" target="_blank"><img src="linkedIn.png" alt="Logo Linkedin" width="30"></a></sub></sub>
+                    <sub><sub><a href="https://instagram.com" target="_blank"><img src="instagram.png" alt="Logo Linkedin" width="30"></a></sub></sub>
+                    <sub><sub><a href="https://twitter.com" target="_blank"><img src="twitter.png" alt="Logo Linkedin" width="30"></a></sub></sub>
+                </p>
             </div>
         </div>
     </div>

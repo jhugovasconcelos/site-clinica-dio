@@ -5,10 +5,11 @@ body {
     background-color: #f1f1f1;
     display: flex;
     justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .wrapper {
-    width: 1200px;
+    width: 1920px;
     display: flex;
     margin: 0 auto;
     background-color: aquamarine;
@@ -21,10 +22,12 @@ body {
 .menu {
     width: 15%;
     background-color: rgb(255, 255, 255);
-    padding: 10px 20px 0px;
+    padding: 100px 20px 0px;
+    font-size: large;
+    font-weight: 600;
 }
 .header {
-    background-color: #c5a0a0;
+    background-color: hsl(184, 76%, 73%);
     min-height: 150px;
 }
 .pagetitle {
@@ -33,11 +36,11 @@ body {
     text-align: center;
 }
 .content {
-    background-color: #91ce9a;
+    background-color: #ffffff;
     min-height: 300px;
     padding: 20px;
 }
 .footer {
-    background-color: rgb(161, 213, 226);
-    min-height: 150px;
+    background-color: rgb(255, 255, 255);
+    min-height: 50px;
 }
